@@ -119,7 +119,5 @@ class Program
         
         lista1.ListaDeGatos();
         lista2.ListaDePerros();
-
-
     }
 }

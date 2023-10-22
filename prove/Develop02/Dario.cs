@@ -4,7 +4,7 @@ using Microsoft.VisualBasic;
 public class Diario
 {
     List<Entry> entries;
-    public Diario ()
+    public Diario()
     {
         entries = new List<Entry>();
     }

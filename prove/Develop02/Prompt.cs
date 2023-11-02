@@ -10,7 +10,7 @@ class Prompt
         string finalPrompt = prompts[index];
 
         
-        return finalPrompt;
+        return " --- " + finalPrompt + " --- "; 
      }
      
     }

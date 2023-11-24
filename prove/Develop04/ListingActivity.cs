@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 
 public class ListingActivity : Activity
 {
-    string [] _listingprompt  = {"When you have you felt the Holy Ghost this month", "When you feel that you did something to help others", "When you were brave in a difficult situation", "When you feel happy today"};
+    private string [] _listingprompt  = {"When you have you felt the Holy Ghost this month", "When you feel that you did something to help others", "When you were brave in a difficult situation", "When you feel happy today"};
     
     public ListingActivity(string activityName, string description) : base(activityName, description)
     {

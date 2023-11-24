@@ -2,9 +2,9 @@ using System.Runtime.CompilerServices;
 
 public class ReflectingActivity : Activity
 {
-    string [] _prompts = {"Think of a time when you did something really difficult.", "Think about a time in your mission that was really hard to you.", "Think about a time when someone hurt you."};
+    private string [] _prompts = {"Think of a time when you did something really difficult.", "Think about a time in your mission that was really hard to you.", "Think about a time when someone hurt you."};
     
-    string [] _questions = {"How did you feel when it was complete?", "Why do you remember that it was difficult for you?", "How Do you feel respect this event currently?", "What is your favorite thing about this experience?"};
+    private string [] _questions = {"How did you feel when it was complete?", "Why do you remember that it was difficult for you?", "How Do you feel respect this event currently?", "What is your favorite thing about this experience?"};
     
     public ReflectingActivity(string activityName, string description) : base(activityName, description)
     {

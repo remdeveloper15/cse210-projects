@@ -4,45 +4,20 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Prep2 World!");
+       HourlyEmployee h1 = new HourlyEmployee("Rubí", "0415hfr", "Ancon, Fenix City", "04-08-2006", 15, 35);
 
-        Console.WriteLine("Please enter your grade: ");
-string grade = Console.ReadLine();
-int number = int.Parse(grade);
+       SalaryEmployee e1 = new SalaryEmployee("Josh", "0503joso", "Ancon, Central Ward", "05-03-2010", 60000);
 
-if (number >= 90)
-{
-    Console.WriteLine("Your grade in letters is A");
-}
+       DisplayEmployeeInfo(h1);
+       DisplayEmployeeInfo(e1);
 
-else if (number >= 80)
-{
-    Console.WriteLine("Your grade in letters is B");
-}
-
-else if (number >= 70)
-{
-    Console.WriteLine("Your grade in letters is C");
-}
-
-else if (number >= 60)
-{
-    Console.WriteLine("Your grade in letters is D");
-}
-
-else
-{
-    Console.WriteLine("Your grade in letters is F");
-}
-
-if (number >= 70)
-{
-    Console.WriteLine("Congratulations! You have passed! :D");
-}
-
-else
-{
-    Console.WriteLine("Sorry! You didn't get it D;");
-}
+       
     }
+
+    public static void DisplayEmployeeInfo(Employee employee)
+    {
+        float pay = employee.GetPay();
+        Console.WriteLine($"{employee.GetName()} will be paid ${pay}");
+    }
+
 }
